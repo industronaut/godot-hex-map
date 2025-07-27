@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=4 uid="uid://bt0soj2wvavie"]
 
-[ext_resource type="Script" path="res://sandbox.gd" id="1_yje1l"]
+[ext_resource type="Script" uid="uid://8l4bkajugrpw" path="res://sandbox.gd" id="1_yje1l"]
 [ext_resource type="PackedScene" uid="uid://wcaukixhlbo2" path="res://RayPickerCamera/ray_picker_camera.tscn" id="2_1one6"]
 [ext_resource type="MeshLibrary" uid="uid://ygm46u2uobsa" path="res://tileset.tres" id="3_qx6ju"]
 
@@ -18,16 +18,18 @@ agent_max_slope = 60.0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_rjhbt"]
 
-[node name="Sandbox" type="Node3D"]
+[node name="Sandbox" type="Node3D" node_paths=PackedStringArray("hex_map")]
 script = ExtResource("1_yje1l")
+hex_map = NodePath("NavigationRegion3D/HexMapTiled")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bev42")
 camera_attributes = SubResource("CameraAttributesPractical_x4oyo")
 
-[node name="RayPickerCamera" parent="." node_paths=PackedStringArray("marker") instance=ExtResource("2_1one6")]
+[node name="RayPickerCamera" parent="." node_paths=PackedStringArray("hex_map", "marker") instance=ExtResource("2_1one6")]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 26.0113, 10.4268)
 fov = 35.0
+hex_map = NodePath("../NavigationRegion3D/HexMapTiled")
 label_cells = false
 marker = NodePath("../Marker")
 

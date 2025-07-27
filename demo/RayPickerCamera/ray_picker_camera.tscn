@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://wcaukixhlbo2"]
 
-[ext_resource type="Script" path="res://RayPickerCamera/ray_picker_camera.gd" id="1_1mxd7"]
+[ext_resource type="Script" uid="uid://gk3oauvf60w3" path="res://RayPickerCamera/ray_picker_camera.gd" id="1_1mxd7"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_d0hky"]
 

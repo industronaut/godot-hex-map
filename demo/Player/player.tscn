@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dr6vxv2avnl26"]
 
-[ext_resource type="Script" path="res://Player/player.gd" id="1_mleep"]
-[ext_resource type="Script" path="res://Player/SmoothCamera.gd" id="2_vwrpg"]
+[ext_resource type="Script" uid="uid://ugoeogiagggo" path="res://Player/player.gd" id="1_mleep"]
+[ext_resource type="Script" uid="uid://i1p1lvshkhbk" path="res://Player/SmoothCamera.gd" id="2_vwrpg"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_q8nkc"]
 

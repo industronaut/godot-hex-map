@@ -15,9 +15,6 @@ demo/addons/hex_map/lib/*
 # test binary
 tests/tests
 
-*.import
-
-
 .cache/
 
 # Godot 4+ specific ignores
