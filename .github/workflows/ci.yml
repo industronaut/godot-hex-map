@@ -9,7 +9,7 @@ on:
 
 env:
   # Used to select the version of Godot to run the tests with.
-  GODOT_TEST_VERSION: 4.3-stable
+  GODOT_TEST_VERSION: 4.4.1-stable
   # Use UTF-8 on Linux.
   LANG: en_US.UTF-8
   LC_ALL: en_US.UTF-8
@@ -19,7 +19,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
   # run the pre-commit hooks and commit any changes
   lint:
     name: pre-commit hooks
